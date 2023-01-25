@@ -371,6 +371,7 @@ section {
     display: flex;
     gap: 2rem;
     padding-top: 2rem;
+    width: 100%;
 }
 
 .icon-item {
@@ -380,6 +381,12 @@ section {
 
 .icone-svg {
     fill: var(--purple);
+    transition: all 0.2s ease;
+}
+
+.icone-svg:hover {
+    fill: #fff;
+    filter: drop-shadow(0px 0px 15px #fff);
 }
 
 .bg-icone-svg {
@@ -578,10 +585,6 @@ caption {
         flex-direction: column;
     }
 
-    .parte1 {
-        padding: 14rem 0 5rem 0;
-    }
-
     .cardin {
         width: 100%;
     }
@@ -607,15 +610,23 @@ caption {
     }
 
     header {
-        width: 100vw;
-        padding: 3rem 2rem 2rem 2rem;
+        display: none;
     }
 
     .cardin-principal {
-        display: flex;
-        align-items: center;
         flex-direction: column;
         text-align: center;
+        padding: 0;
+    }
+
+    .logo-fundo {
+        left: -6rem;
+        top: -9rem;
+        width: 38rem;
+    }
+
+    .media-contact {
+        padding-top: 7rem;
     }
 
     .text-wrap {
