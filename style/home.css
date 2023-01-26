@@ -225,7 +225,7 @@ pre {
 
 .parte1 {
     background: var(--escuro);
-    padding: 4rem 0;
+    padding-top: 8rem;
 }
 
 .container {
@@ -273,6 +273,10 @@ section {
     background: var(--escuro);
     padding: 3rem 0 10rem 0;
 }
+
+/* .title-cases {
+    color: var(--purple);
+} */
 
 .banner-principal {
     width: 100vw;
@@ -377,6 +381,15 @@ section {
 .icon-item {
     width: 5rem;
     padding: 0.5rem;
+}
+
+.title-cases h2 {
+    color: #fff;
+    text-align: left;
+    padding: 8rem 0 2rem 0;
+    border-bottom: 1px solid #ffffff1a;
+    margin: 0 0 3rem 0;
+    width: 100%;
 }
 
 .icone-svg {
