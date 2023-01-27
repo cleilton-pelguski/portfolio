@@ -47,7 +47,7 @@ h3 {
 }
 
 h4 {
-    font-size: clamp(28px, 2.8rem, 5vw);
+    font-size: clamp(20px, 2.2rem, 4vw);
 }
 
 h5 {
@@ -237,16 +237,6 @@ pre {
     justify-content: center;
 }
 
-.cardin {
-    background: #211a2e;
-    border-radius: 4px;
-    width: 32%;
-}
-
-.cardin video {
-    width: 440px;
-}
-
 .cardin-principal {
     display: flex;
     align-items: center;
@@ -325,35 +315,6 @@ section {
     line-height: 1.7;
 }
 
-.cardin-image {
-    padding: 0 2rem;
-    min-height: 100px;
-    width: 100%;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.cardin-image p {
-    color: #ff67ec;
-    font-size: 1.9rem;
-    text-align: end;
-}
-
-.cardin-image h3 {
-    color: #fff;
-}
-
-.cardin a {
-    color: #37ffd4;
-}
-
-.cardin h2 {
-    color: #ffb082;
-    margin-top: 5px;
-    margin-bottom: 15px;
-}
-
 .logo-fundo {
     position: absolute;
     left: -13rem;
@@ -411,23 +372,14 @@ caption {
     caption-side: top !important;
 }
 
-/*imagens*/
-.card {
-    padding-bottom: 2rem;
-}
-
-.card {
-    background-color: transparent;
-    border: none;
-}
-
-.align-center {
-    text-align: center;
-}
-
 .card-wrap {
     position: relative;
     transition: all 0.3s ease;
+    width: 32%;
+}
+
+.card-wrap img {
+    border-radius: 10px;
 }
 
 .card-text {
@@ -440,10 +392,10 @@ caption {
     background-color: #500070b5;
     width: 100%;
     height: 60px;
-    pointer-events: none;
     backdrop-filter: blur(13px);
     color: #fff;
     padding: 10px;
+    border-radius: 0 0 8px 8px;
     bottom: 0;
     text-align: center;
     margin-bottom: 0 !important;
@@ -452,22 +404,16 @@ caption {
 
 .card-wrap:hover .card-text {
     height: 100%;
-    line-height: 2;
+    line-height: 1.5;
+    border-radius: 10px 10px 5px 5px;
 }
 
 .cardimg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     overflow: hidden;
-    border-radius: 5px;
 }
 
 .cardimg img {
-    min-width: 80%;
-    max-width: 100%;
-    min-height: 400px;
+    border-radius: 10px;
 }
 
 .sub-title-card {
@@ -485,18 +431,19 @@ caption {
 }
 
 .linha-img {
-    width: 0%;
-    height: 400px;
-    background: #37ffd400;
-    z-index: 2;
-    margin: 0 auto;
-    position: relative;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    background: #37ffd4;
+    border-radius: 0 0 10px 10px;
     transition: 0.5s;
-    border-bottom: 3px solid #37ffd4;
 }
 
 .card-wrap:hover .linha-img {
     width: 100%;
+    border-radius: 0 0 10px 10px;
+    height: 3px;
 }
 
 .beadcrumbs {
@@ -506,11 +453,6 @@ caption {
 .beadcrumbs a {
     color: #786a92;
 }
-
-.video-meninos {
-    width: 100%;
-}
-
 
 .home-subtitle {
     font-weight: 300;
@@ -584,24 +526,8 @@ caption {
         flex-direction: column;
     }
 
-    .cardin {
-        width: 100%;
-    }
-
-    .cardin-image {
-        min-height: 0;
-    }
-
-    .cardimg img,
-    .cardimg,
-    .linha-img,
     .card-wrap {
-        min-height: 200px;
-        height: 200px;
-    }
-
-    .cardin-image h3 {
-        margin: 2rem 0;
+        width: 100%;
     }
 
     .logo-top img {
@@ -636,8 +562,6 @@ caption {
         text-align: center;
     }
 
-    .title-card,
-    .sub-title-card,
     .banner-principal,
     .horizontal-nav,
     .sticky {
