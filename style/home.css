@@ -417,11 +417,12 @@ caption {
 }
 
 .sub-title-card {
-    display: none;
+    font-size: 0;
+    transition: all 0.3s ease;
 }
 
 .card-wrap:hover .sub-title-card {
-    display: block;
+    font-size: 1.6rem;
 }
 
 .title-image {
@@ -430,20 +431,16 @@ caption {
     margin: 70px 0 50px 0px;
 }
 
-.linha-img {
-    position: absolute;
-    width: 0;
-    height: 0;
-    bottom: 0;
-    background: #37ffd4;
-    border-radius: 0 0 10px 10px;
-    transition: 0.5s;
+.card-wrap:hover .linha-img {
+    width: 30%;
+    height: 2px;
+    margin: 2rem 0 0 0;
 }
 
-.card-wrap:hover .linha-img {
-    width: 100%;
-    border-radius: 0 0 10px 10px;
-    height: 3px;
+.linha-img {
+    width: 0;
+    background: #37ffd4;
+    transition: 0.5s;
 }
 
 .beadcrumbs {
