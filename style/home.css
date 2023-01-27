@@ -28,7 +28,7 @@ html {
 
     /* 1rem = 16px (user agent = 100%) */
     font-size: 62.5%
-        /* = 10px */
+    /* = 10px */
     ;
 }
 
@@ -59,15 +59,12 @@ a {
     font-size: clamp(16px, 1.6rem, 2vw);
 }
 
-
 span {
     font-size: clamp(12px, 1.2rem, 2vw)
 }
 
 body {
     width: 100vw;
-    background: var(--background);
-    margin: 0;
     overflow-x: hidden;
 }
 
@@ -260,10 +257,6 @@ pre {
     background: var(--escuro);
     padding: 3rem 0 10rem 0;
 }
-
-/* .title-cases {
-    color: var(--purple);
-} */
 
 .banner-principal {
     width: 100vw;
@@ -509,7 +502,7 @@ caption {
 
 @media (max-width: 767px) {
     .container {
-        width: 80% !important;
+        width: 85% !important;
     }
 
     .header-top {
@@ -545,7 +538,14 @@ caption {
     }
 
     .media-contact {
-        padding-top: 7rem;
+        gap: 1.5rem;
+        padding-top: 5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon-item {
+        width: 4rem;
     }
 
     .text-wrap {
