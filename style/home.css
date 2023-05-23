@@ -19,7 +19,7 @@ html {
     --background: #fff;
     --degrade-verde: linear-gradient(45deg, #f63a91, #f63a3a);
     --degrade-verde-hover: linear-gradient(224deg, #fb5a70, #e83f5b);
-    overflow-x: hidden;
+
 
     /* 1rem = 16px (user agent = 100%) */
     font-size: 62.5%;
@@ -284,7 +284,7 @@ pre {
 }
 
 .parte1 {
-    background: var(--escuro);
+    background: #080614;
     padding-top: 8rem;
 }
 
@@ -299,7 +299,7 @@ pre {
 .cardin-principal {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 0;
     position: relative;
 }
 
@@ -330,7 +330,7 @@ pre {
     width: 100%;
     bottom: -1px;
     left: 0;
-    fill: var(--escuro);
+    fill: #080614;
 }
 
 .banner-principal {
@@ -350,20 +350,16 @@ pre {
 
 .logo-fundo svg {
     position: absolute;
-    left: -13rem;
+    left: -8rem;
     top: 6rem;
     fill: var(--verde);
 }
 
 .cleilton-imagem {
-    position: relative;
-    left: 0;
-    width: 500px;
-    background: var(--card);
-    margin: 40px;
-    border-radius: 0 0 250px 0;
-}
-
+    margin: 0 100px;
+    object-fit: fill;
+    width: 450px;
+}   
 
 .media-contact {
     display: flex;
@@ -582,7 +578,6 @@ pre {
         font-size: 12rem;
         letter-spacing: -2.7px;
     }
-
     .wave {
         bottom: -35px;
     }
@@ -681,9 +676,9 @@ pre {
 
 
 @media (min-width: 767px) {
-    .logo-mobile {
-        display: none;
-    }
+.logo-mobile {
+display: none;
+}
 }
 
 @media (max-width: 767px) {
@@ -710,7 +705,7 @@ pre {
     }
 
     .home-subtitle {
-        font-size: 2.1rem;
+        font-size: 2.4rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -725,7 +720,7 @@ pre {
     }
 
     .hand-banner {
-        width: 338px;
+        width: 438px;
         bottom: -175px;
         right: 0px;
     }
