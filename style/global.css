@@ -29,7 +29,6 @@ body {
     display: flex;
     height: 100vh;
     background: var(--background);
-    scroll-behavior: smooth;
 }
 
 body, button, input, textarea{
