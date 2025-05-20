@@ -776,6 +776,11 @@ a:hover {
         padding: 3rem 0;
     }
 
+    .sticky img { 
+        padding: 2rem 0;
+        width: 7rem;
+    }
+
     .cleilton-imagem {
         margin: -160px 0 0 0;
         width: 70vw;
@@ -840,6 +845,14 @@ a:hover {
 
     .horizontal-nav {
         display: none;
+    }
+
+    #cursor {
+         display: none;
+    }
+
+    * {
+        cursor: auto
     }
 
 }
