@@ -96,7 +96,7 @@ body {
 #bottom {
     color: #fff;
     width: 100vw;
-    border: 1px solid var(--Border);
+    border-top: 1px solid var(--Border);
     background: var(--background);
 }
 
@@ -167,7 +167,7 @@ header {
     background: var(--background);
     position: fixed;
     z-index: 999;
-    border: 1px solid var(--Border);
+    border-bottom: 1px solid var(--Border);
 }
 
 .sticky nav li:hover {
@@ -451,6 +451,7 @@ a:hover {
     height: 500px;
     overflow: hidden;
     border-radius: 10px;
+    border: 1px solid var(--Border);
 }
 
 .card-text {
@@ -722,6 +723,13 @@ a:hover {
 
 
 @media (max-width: 767px) {
+
+    .title-cases h2 {
+        padding: 3rem 0;
+        margin: 0;
+        border-bottom: none;
+    }
+
     .container {
         width: 85%;
     }
@@ -776,7 +784,7 @@ a:hover {
         padding: 3rem 0;
     }
 
-    .sticky img { 
+    .sticky img {
         padding: 2rem 0;
         width: 7rem;
     }
@@ -848,7 +856,7 @@ a:hover {
     }
 
     #cursor {
-         display: none;
+        display: none;
     }
 
     * {
