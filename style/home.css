@@ -32,6 +32,11 @@ section {
     padding: 0rem 0 8rem 0;
 }
 
+#motions .container {
+    display: flex;
+    justify-content: center;
+}
+
 #cursor {
     position: fixed;
     width: 20px;
@@ -457,7 +462,7 @@ a:hover {
 .cardVideo {
     position: relative;
     transition: all 0.3s ease;
-    width: 24.5%;
+    width: 24%;
     overflow: hidden;
     border-radius: 10px;
     border: 2px solid var(--Border);
